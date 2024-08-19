@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<script type="text/javascript" src="/path/to/react.js"></script>
+<script type="text/javascript" src="/path/to/react-dom.js"></script>
+<script type="text/javascript">
+// Use react JavaScript code here or in a separate file
+var React = require('react');
+var createReactClass = require('create-react-class');
+var CommentBox = reactCreateClass({
+render: function() {
+return (
+<div className="commentBox">
+<h1>Comments</h1>
+<CommentList /> // Which was defined above and can be reused
+<CommentForm /> // Same here
+</div>
+);
+}
+});
+</script>
+</body>
+</html>
